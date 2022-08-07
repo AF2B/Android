@@ -8,7 +8,6 @@ fun main() {
   println(PI)
   println(E)
   println(abs(-1))
-  println(pow(2.0, 3.0))
   println(round(3.141592653589793))
   println(ceil(3.14))
   println(floor(3.14))

@@ -10,7 +10,21 @@ fun main() {
     var short: Short = 50
     var byte: Byte = 100
 
+    val test: UInt = 0u
+    val test2: ULong = 0uL
+    val test3: UByte = 0u
+    val test4: UShort = 0u
+
     println(hello_world)
+
+    println("ULong max value: ${ulong.MAX_VALUE}")
+    println("ULong min value: ${ulong.MIN_VALUE}")
+    println("UInt max value: ${uint.MAX_VALUE}")
+    println("UInt min value: ${uint.MIN_VALUE}")
+    println("UShort max value: ${ushort.MAX_VALUE}")
+    println("UShort min value: ${ushort.MIN_VALUE}")
+    println("UByte max value: ${ubyte.MAX_VALUE}")
+    println("UByte min value: ${ubyte.MIN_VALUE}")
 
     println("Double max value: ${Double.MAX_VALUE}") // 1.7976931348623157e+308
     println("Double min value: ${Double.MIN_VALUE}") // 4.9e-324

@@ -1,5 +1,14 @@
 fun main() {
     var hello_world: String = "Hello World"
+    var char: Char = "a"
+    var str: String = "Text lorem ipsum..."
+    var bool: Boolean = true
+    var double: Double = 1.0
+    var float: Float = 1.0f
+    var int: Int = 1
+    var long: Long = 1L
+    var short: Short = 50
+    var byte: Byte = 100
 
     println(hello_world)
 

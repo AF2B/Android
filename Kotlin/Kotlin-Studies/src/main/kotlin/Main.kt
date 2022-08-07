@@ -10,10 +10,14 @@ fun main() {
     var short: Short = 50
     var byte: Byte = 100
 
+    //val são constantes, não podem ser alteradas
     val test: UInt = 0u
     val test2: ULong = 0uL
     val test3: UByte = 0u
     val test4: UShort = 0u
+
+    val name: String = "André"
+    //name = "Filipe" ~> erro de compilação
 
     println(hello_world)
 

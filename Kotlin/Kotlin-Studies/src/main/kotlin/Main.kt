@@ -16,8 +16,31 @@ fun main() {
     val test3: UByte = 0u
     val test4: UShort = 0u
 
-    val name: String = "André"
-    //name = "Filipe" ~> erro de compilação
+    val nome: String = "André"
+    //nome = "Filipe" ~> erro de compilação
+    val sobrenome: String = "Borba"
+    val nomeCompleto: String = "$nome $sobrenome"
+    val nomeCompleto2: String = "${nome} ${sobrenome}"
+    println(nomeCompleto)
+    println(nomeCompleto2)
+
+    var idade: Int = 24
+    idade = idade + 1
+    println(idade)
+    idade += 1
+    println(idade)
+    idade -= 1
+    println(idade)
+    idade *= 2
+    println(idade)
+    idade /= 2
+    println(idade)
+    idade %= 2
+    println(idade)
+    idade++
+    println(idade)
+    idade--
+    println(idade)
 
     println(hello_world)
 

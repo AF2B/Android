@@ -10,8 +10,6 @@ class MainTest {
     Assertions.assertEquals(expected, whenCalled)
   }
 
-  //If transformStringToArray receive a string with a -,
-  //It should return a message saying that the string is invalid!
   @Test
   @DisplayName("transformStringToArray Invalid input")
   fun transformStringToArrayInvalidInputTest(){

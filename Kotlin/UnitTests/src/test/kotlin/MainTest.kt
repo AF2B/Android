@@ -5,9 +5,13 @@ class MainTest {
   @DisplayName("transformStringToArray")
   fun transformStringToArrayTest(){
     val input = "a,b,c,d,e"
+    val input2 = "a.b.c.d.e"
     val expected = println(input)
+    val expected2 = println("Virgula ou espaço!")
     val whenCalled = transformStringToArray(input)
+    val whenCalled2 = transformStringToArray(input2)
     Assertions.assertEquals(expected, whenCalled)
+    Assertions.assertEquals(expected2, whenCalled2)
   }
 
   @Test

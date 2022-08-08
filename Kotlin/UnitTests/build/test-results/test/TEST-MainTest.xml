@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MainTest" tests="2" skipped="1" failures="0" errors="0" timestamp="2022-08-08T01:43:50" hostname="af2b" time="0.078">
+  <properties/>
+  <testcase name="Test example" classname="MainTest" time="0.065"/>
+  <testcase name="metodoNaoImplementado()" classname="MainTest" time="0.005">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[a,b,c,d,e
+[a, b, c, d, e]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

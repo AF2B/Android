@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MainTest" tests="2" skipped="1" failures="0" errors="0" timestamp="2022-08-08T01:43:50" hostname="af2b" time="0.078">
+<testsuite name="MainTest" tests="3" skipped="1" failures="0" errors="0" timestamp="2022-08-08T02:19:50" hostname="af2b" time="0.095">
   <properties/>
-  <testcase name="Test example" classname="MainTest" time="0.065"/>
-  <testcase name="metodoNaoImplementado()" classname="MainTest" time="0.005">
+  <testcase name="transformStringToArray Invalid input" classname="MainTest" time="0.068"/>
+  <testcase name="transformStringToArray" classname="MainTest" time="0.01"/>
+  <testcase name="metodoNaoImplementado()" classname="MainTest" time="0.001">
     <skipped/>
   </testcase>
-  <system-out><![CDATA[a,b,c,d,e
+  <system-out><![CDATA[Virgula ou espaço!
+Virgula ou espaço!
+a,b,c,d,e
 [a, b, c, d, e]
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

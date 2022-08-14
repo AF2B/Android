@@ -30,20 +30,30 @@ class Desktop(marca: String, modelo: String, preco: String) : Componente() {
   override var marca: String = marca
   override var modelo: String = modelo
   override var preco: String = preco
+  private var hibernar: Boolean = false
 
   val imprimir = imprimir()
 
   private fun save() {
     println("Salvando...")
   }
+  private fun save(hibernar: Boolean) {
+    this.hibernar = true
+    save()
+    println("Hibernando...")
+  }
 
-  public override fun ligar():Unit {
+  public override fun ligar() {
     super.ligar()
   }
 
   public override fun desligar() {
     save()
     super.desligar()
+  }
+
+  fun hibernar() {
+    save(true)
   }
 }
 
@@ -55,4 +65,6 @@ fun main() {
   println("===============================================")
   desktop.ligar()
   desktop.desligar()
+  println("===============================================")
+  desktop.hibernar()
 }

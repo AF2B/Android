@@ -1,7 +1,12 @@
 package poo
 
 enum class Prioridade {
-  BAIXA, MEDIA, ALTA
+  BAIXA{
+    override fun toString(): String {
+      return "Prioridade Baixa"
+    }},
+  MEDIA,
+  ALTA
 }
 
 enum class Animais {
@@ -20,6 +25,17 @@ enum class Cor(val rgb: Int) {
   BRANCO(0xFFFFFF)
 }
 
+enum class Cargo(val cargo: Int) {
+  DESENVOLVEDOR(1){
+    override fun toString(): String {
+      return "Seu cargo equivale ao id: $cargo"
+    }},
+  DBA(2),
+  TESTADOR(3),
+  ARQUITETO(4),
+  PROJECT_MANAGER(5)
+}
+
 fun x(prioridade: Prioridade) {
   when (prioridade) {
     Prioridade.BAIXA -> println("Baixa")
@@ -29,6 +45,8 @@ fun x(prioridade: Prioridade) {
 }
 
 fun main() {
+
+
   for (cores in Cor.values()) {
     if(cores.rgb == 0xFF0000) {
       println("Vermelho \n")

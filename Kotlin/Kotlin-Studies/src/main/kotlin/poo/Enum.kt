@@ -20,4 +20,9 @@ fun main() {
   x(Prioridade.ALTA)
   x(Prioridade.MEDIA)
   x(Prioridade.BAIXA)
+  println("\n")
+
+  for (a in Animais.values()) {
+    println(a)
+  }
 }

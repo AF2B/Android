@@ -6,7 +6,11 @@
 package poo
 
 data class Endereco(val rua: String, val numero: Int, val cidade: String)
-class Pessoa(val nome: String, val sobrenome: String)
+class Pessoa(val nome: String, val sobrenome: String) {
+  fun codar() {
+    TODO("Not yet implemented")
+  }
+}
 
 fun testClass(param: Pessoa, param2: Pessoa) {
   println(param.equals(param2))
